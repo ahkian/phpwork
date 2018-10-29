@@ -1,3 +1,4 @@
+<!-- Triggered by clicking link to this doc  -->
 <?php
   if(isset($_GET['friendid'])){
     include './dbconnection.php';
