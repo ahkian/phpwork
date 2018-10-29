@@ -1,5 +1,6 @@
-<!-- Triggered by clicking link to this doc  -->
+
 <?php
+  //gets info for friend row when link to this doc is clicked
   if(isset($_GET['friendid'])){
     include './dbconnection.php';
     $sql = 'SELECT * FROM friends WHERE friendid=' . $db->real_escape_string($_GET['friendid']);
@@ -9,6 +10,7 @@
 ?>
 
 <?php
+//sends updated info to friend table when form is submitted
   if(isset($_POST['execute'])){
     include './dbconnection.php';
 
